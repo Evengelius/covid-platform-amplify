@@ -33,17 +33,7 @@ import {DataTablesModule} from 'angular-datatables';
         DataTablesModule,
         AppRoutingModule,
     ],
-    providers: [
-        AppStarterService,
-        {
-            provide: APP_INITIALIZER,
-            useFactory: (appStarterService) => () => new Promise<void>((resolve) => {
-                appStarterService.start().subscribe(() => resolve());
-            }),
-            deps: [AppStarterService],
-            multi: true
-        },
-    ],
+    providers: [],
     bootstrap: [
         AppComponent,
     ],
