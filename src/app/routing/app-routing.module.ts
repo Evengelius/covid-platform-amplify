@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {DashboardComponent} from "../components/core/dashboard/dashboard.component";
-import {ProductComponent} from "../components/core/product/product.component";
-import {ContractsComponent} from "../components/core/contracts/contracts.component";
-import {ManufacturingComponent} from "../components/core/manufacturing/manufacturing.component";
+import {DashboardComponent} from '../components/core/dashboard/dashboard.component';
+import {ProductComponent} from '../components/core/product/product.component';
+import {ContractsComponent} from '../components/core/contracts/contracts.component';
+import {ManufacturingComponent} from '../components/core/manufacturing/manufacturing.component';
 
 const routes: Routes = [
     {

@@ -11,9 +11,9 @@ import {ContractsComponent} from './components/core/contracts/contracts.componen
 import {FooterComponent} from './components/include/footer/footer.component';
 import {DashboardComponent} from './components/core/dashboard/dashboard.component';
 import {SidebarComponent} from './components/navigation/sidebar/sidebar.component';
-import {AppRoutingModule} from "./routing/app-routing.module";
-import {AppStarterService} from "./service/app-starter.service";
-import {DataTablesModule} from "angular-datatables";
+import {AppRoutingModule} from './routing/app-routing.module';
+import {AppStarterService} from './service/app-starter.service';
+import {DataTablesModule} from 'angular-datatables';
 
 @NgModule({
     declarations: [

@@ -22,7 +22,6 @@ export type ChartOptions = {
     legend: ApexLegend;
 };
 
-
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -30,7 +29,7 @@ export type ChartOptions = {
 })
 export class DashboardComponent implements OnInit {
 
-    @ViewChild("chart") chart: ChartComponent;
+    @ViewChild('chart') chart: ChartComponent;
     public chartOptions: Partial<ChartOptions>;
     dtOptions: DataTables.Settings = {};
 
@@ -39,25 +38,25 @@ export class DashboardComponent implements OnInit {
         this.chartOptions = {
             series: [
                 {
-                    name: "COVID-19 treatments",
+                    name: 'COVID-19 treatments',
                     data: [0, 2, 8, 0],
-                    color: "#40A0FC"
+                    color: '#40A0FC'
                 },
                 {
-                    name: "COVID-19 vaccines",
+                    name: 'COVID-19 vaccines',
                     data: [3, 2, 6, 3],
-                    color: "#034086"
+                    color: '#034086'
                 }
             ],
             chart: {
-                type: "bar",
+                type: 'bar',
                 height: 430
             },
             plotOptions: {
                 bar: {
                     horizontal: false,
                     dataLabels: {
-                        position: "top"
+                        position: 'top'
                     }
                 }
             },
@@ -65,17 +64,21 @@ export class DashboardComponent implements OnInit {
                 enabled: true,
                 offsetY: -20,
                 style: {
-                    fontSize: "12px",
-                    colors: ["#000000"]
+                    fontSize: '12px',
+                    colors: ['#000000']
                 }
             },
             stroke: {
                 show: true,
                 width: 1,
-                colors: ["#fff"]
+                colors: ['#fff']
             },
             xaxis: {
-                categories: ["Currently under rolling review", "Marketing authorisation application submitted", "Authorised for use in the EU", "Authorised for use as boosters in the EU"]
+                categories:
+                    [
+                        'Currently under rolling review', 'Marketing authorisation application submitted',
+                        'Authorised for use in the EU', 'Authorised for use as boosters in the EU'
+                    ]
             },
             legend: {
                 offsetY: 9
