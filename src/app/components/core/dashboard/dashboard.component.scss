@@ -1,0 +1,66 @@
+.dashboard-width {
+    width: 90% !important;
+}
+
+.card-header a {
+    text-decoration: none;
+    color: #305E98;
+}
+
+.card-header a:hover {
+    color: #61AEFC;
+}
+
+.dashboard-dataTable {
+    width: 80% !important;
+    margin: 7rem auto 0;
+    position: relative;
+    bottom: 50px;
+}
+
+.dashboard-thead {
+    background-color: #305E98;
+    color: white;
+}
+
+.dashboard-dataTable th {
+    text-align: center;
+}
+
+.dashboard-dataTable tbody tr:nth-child(even) {
+    background-color: #cebd04;
+}
+
+.dashboard-dataTable tbody tr:nth-child(odd) {
+    background-color: #61AEFC;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(odd) td {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(odd) td a {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(even) td {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(even) td a {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(odd) td a:hover {
+    color: #305E98;
+}
+
+.dashboard-dataTable .dashboard-tbody tr:nth-child(even) td a:hover {
+    color: #305E98;
+}

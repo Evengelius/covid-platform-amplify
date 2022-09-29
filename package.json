@@ -1,0 +1,35 @@
+{
+    "name": "eui-ecl-angular-app",
+    "version": "14.0.4",
+    "license": "EUPL-1.1",
+    "scripts": {
+        "ng": "ng",
+        "start-mock-server": "nodemon --watch ./mock ./mock/server.js",
+        "start-serve": "eui-scripts serve-app --configuration=proxy-mock",
+        "start": "npm-run-all --parallel start-mock-server start-serve",
+        "start-proxy": "eui-scripts serve-app --configuration=proxy",
+        "start-local": "eui-scripts serve-app",
+        "build": "eui-scripts build-app --skipTest",
+        "build-dev": "eui-scripts build-app --configuration=development --configEnvTarget=dev --skipTest",
+        "build-prod": "eui-scripts build-app --configuration=production-optimized --configEnvTarget=prod --skipTest",
+        "build-prod-skip-test": "eui-scripts build-app --configuration=production-optimized --configEnvTarget=prod --skipTest",
+        "build-prod-stats": "eui-scripts build-app --configuration=production-optimized --configEnvTarget=prod --statsJson --skipTest",
+        "app:build": "eui-scripts build-app --skipTest",
+        "app:inject-config": "eui-scripts inject-config-app",
+        "generate-changelog": "eui-scripts generate-changelog"
+    },
+    "private": true,
+    "dependencies": {
+        "@eui/deps-base": "14.0.4",
+        "@eui/ecl-core": "14.0.1",
+        "@eui/ecl-styles": "14.0.1",
+        "@types/datatables.net": "^1.10.24",
+        "@types/jquery": "^3.5.14",
+        "angular-datatables": "^14.0.0",
+        "bootstrap": "^5.2.1",
+        "bootstrap-icons": "^1.9.1",
+        "datatables.net": "^1.12.1",
+        "datatables.net-dt": "^1.12.1",
+        "jquery": "^3.6.1"
+    }
+}

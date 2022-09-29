@@ -1,0 +1,12 @@
+<ecl-app-core>
+    <app-header [url]="url"></app-header>
+
+    <!--<div style="display: flex" [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">-->
+    <div style="display:flex">
+        <app-sidebar></app-sidebar>
+        <div style="flex:2;">
+            <router-outlet #outlet="outlet"></router-outlet>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</ecl-app-core>

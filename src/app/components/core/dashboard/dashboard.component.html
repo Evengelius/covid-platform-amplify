@@ -1,0 +1,144 @@
+<div class="d-flex justify-content-center mt-5">
+    <div class="card dashboard-width">
+        <div class="card-header">
+            COVID-19 <a
+            href="https://www.ema.europa.eu/en/human-regulatory/overview/public-health-threats/coronavirus-disease-covid-19/treatments-vaccines/covid-19-treatments"
+            target="_blank">treatments</a> & <a
+            href="https://www.ema.europa.eu/en/human-regulatory/overview/public-health-threats/coronavirus-disease-covid-19/treatments-vaccines/covid-19-vaccines"
+            target="_blank">vaccines</a>
+        </div>
+        <div class="card-body">
+            <eui-apex-chart
+                [chart]="chartOptions.chart"
+                [dataLabels]="chartOptions.dataLabels"
+                [legend]="chartOptions.legend"
+                [plotOptions]="chartOptions.plotOptions"
+                [series]="chartOptions.series"
+                [stroke]="chartOptions.stroke"
+                [xaxis]="chartOptions.xaxis"
+            ></eui-apex-chart>
+        </div>
+    </div>
+    <!-- end col-->
+</div>
+<!-- end row-->
+
+
+<!-- DataTable -->
+<div class="dashboard-dataTable table-responsive text-center">
+    <table [dtOptions]="dtOptions" class="table table-striped table-bordered table-hover" datatable>
+        <caption>Experimental Unapproved Treatments for COVID-19</caption>
+        <thead class="dashboard-thead">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody class="dashboard-tbody">
+        <tr>
+            <td>1</td>
+            <td><a href="https://go.drugbank.com/drugs/DB00503" target="_blank">Ritonavir</a></td>
+            <td>An HIV protease inhibitor used in combination with other antivirals in the treatment of HIV infection.
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="https://go.drugbank.com/drugs/DB00608" target="_blank">Chloroquine</a></td>
+            <td>An antimalarial drug used to treat susceptible infections with P. vivax, P. malariae, P. ovale, and P.
+                falciparum. It is also used for second line treatment for rheumatoid arthritis.
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="https://go.drugbank.com/drugs/DB15656" target="_blank">AstraZeneca COVID-19 Vaccine</a></td>
+            <td>A two-dose replication-deficient adenovirus vector vaccine used to prevent COVID-19 caused by
+                SARS-CoV-2.
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="https://go.drugbank.com/drugs/DB01601" target="_blank">Lopinavir</a></td>
+            <td>An HIV-1 protease inhibitor used in combination with ritonavir to treat human immunodeficiency virus
+                (HIV) infection.
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="https://go.drugbank.com/drugs/DB15654" target="_blank">Moderna COVID-19 Vaccine</a></td>
+            <td>An mRNA vaccine for the prevention of COVID-19, the disease caused by the SARS-CoV-2 virus, in patients
+                aged 18 years and older.
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="https://go.drugbank.com/drugs/DB12466" target="_blank">Favipiravir</a></td>
+            <td>An antiviral used to manage influenza, and that has the potential to target other viral infections.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="https://go.drugbank.com/drugs/DB13609" target="_blank">Umifenovir</a></td>
+            <td>A dual direct-acting antiviral/host-targeting agent used in the treatment and prophylaxis of influenza
+                and other respiratory viruses.
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="https://go.drugbank.com/drugs/DB15655" target="_blank">Ad5-nCoV</a></td>
+            <td>Ad5-nCoV is a recombinant adenovirus type-5 vector (Ad5) vaccine currently being investigated for
+                prophylaxis against SARS-CoV-2.[L12675,L12678] It is being developed by CanSino Biologics Inc., in
+                partnership with the Beijing Institute...
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="https://go.drugbank.com/drugs/DB00959" target="_blank">Methylprednisolone</a></td>
+            <td>A corticosteroid used to treat inflammation or immune reactions across a variety of organ systems,
+                endocrine conditions, and neoplastic diseases.
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="https://go.drugbank.com/drugs/DB15623" target="_blank">TMC-310911</a></td>
+            <td>TMC-310911 (also known as ASC-09) is a novel investigational protease inhibitor (PI) that is
+                structurally similar to the currently available darunavir. It is being investigated for use in HIV-1
+                infections....
+            </td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="https://go.drugbank.com/drugs/DB11676" target="_blank">Galidesivir</a></td>
+            <td>Galidesivir is an adenosine analogue that has been investigated for use against Zaire Ebolavirus. In
+                animal studies, galidesivir was effective in increasing the survival rates from infections caused by
+                various...
+            </td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><a href="https://go.drugbank.com/drugs/DB14999" target="_blank">Human interferon beta</a></td>
+            <td>A polypeptide drug used in the treatment of relapsing forms of Multiple Sclerosis (MS).</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><a href="https://go.drugbank.com/drugs/DB01264" target="_blank">Darunavir</a></td>
+            <td>A HIV protease inhibitor used in the treatment of human immunodeficiency virus (HIV) infection in
+                patients with history of prior antiretroviral therapies.
+            </td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><a href="https://go.drugbank.com/drugs/DB08868" target="_blank">Fingolimod</a></td>
+            <td>A sphingosine 1-phosphate receptor modulator used to treat patients with the relapsing-remitting form of
+                multiple sclerosis (MS) and studied to manage lung complications of COVID-19.
+            </td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><a href="https://go.drugbank.com/drugs/DB15622" target="_blank">Triazavirin</a></td>
+            <td>An antiviral used to treat several strains of influenza.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
