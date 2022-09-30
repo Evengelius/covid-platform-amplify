@@ -33,7 +33,9 @@ import {DataTablesModule} from 'angular-datatables';
         DataTablesModule,
         AppRoutingModule,
     ],
-    providers: [],
+    providers: [
+        AppStarterService
+    ],
     bootstrap: [
         AppComponent,
     ],
