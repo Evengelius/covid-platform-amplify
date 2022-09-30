@@ -52,15 +52,15 @@ export class AppStarterService {
     /**
      * Fetches user details
      */
-    private fetchUserDetails(): Observable<UserDetails> {
-        // const url = this.config.modules.your_custom_module.your_custom_endpoint
+    private fetchUserDetails(): Observable<any> {
         const moduleCoreApi = this.config.modules.core;
         const url = `${moduleCoreApi.base}${moduleCoreApi.userDetails}`;
         const user = { userId: 'anonymous' };
 
         if (!url) {
+
             return of(user);
         }
-        return this.http.get<UserDetails>(url);
+        return this.http.get(url,{responseType: 'text'});
     }
 }
