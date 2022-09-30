@@ -8,7 +8,7 @@ import {ManufacturingComponent} from '../components/core/manufacturing/manufactu
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'products',
+        redirectTo: 'dashboard',
         pathMatch: 'full'
     },
     {
