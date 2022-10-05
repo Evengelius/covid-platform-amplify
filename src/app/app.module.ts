@@ -4,27 +4,29 @@ import {APP_INITIALIZER, NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {CoreModule} from './core/core.module';
-import {HeaderComponent} from './components/include/header/header.component';
 import {ProductComponent} from './components/core/product/product.component';
-import {ManufacturingComponent} from './components/core/manufacturing/manufacturing.component';
-import {ContractsComponent} from './components/core/contracts/contracts.component';
 import {FooterComponent} from './components/include/footer/footer.component';
 import {DashboardComponent} from './components/core/dashboard/dashboard.component';
-import {SidebarComponent} from './components/navigation/sidebar/sidebar.component';
 import {AppRoutingModule} from './routing/app-routing.module';
 import {AppStarterService} from './service/app-starter.service';
 import {DataTablesModule} from 'angular-datatables';
+import { DistributorComponent } from './components/core/distributor/distributor.component';
+import { ReportComponent } from './components/core/report/report.component';
+import { SupplierComponent } from './components/core/supplier/supplier.component';
+import { WarehouseComponent } from './components/core/warehouse/warehouse.component';
+import { ManufacturerComponent } from './components/core/manufacturer/manufacturer.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        SidebarComponent,
         DashboardComponent,
         ProductComponent,
-        ContractsComponent,
-        ManufacturingComponent,
+        ManufacturerComponent,
+        WarehouseComponent,
+        SupplierComponent,
+        DistributorComponent,
+        ReportComponent,
+        FooterComponent,
     ],
     imports: [
         BrowserModule,

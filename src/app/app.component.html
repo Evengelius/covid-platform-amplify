@@ -1,12 +1,46 @@
-<ecl-app-core>
-    <app-header [url]="url"></app-header>
+<ecl-app-harmonised (languageDismiss)="onLanguageDismiss($event)">
+    <ecl-site-header-harmonised
+        group="1"
+        siteName="Covid-19 Therapeutics Mapping Platform"
+    >
+        <!-- Header Actions -->
+        <ecl-site-header-harmonised-action>
+            <ecl-site-header-harmonised-login
+                [isLoggedIn]="isLoggedIn"
+                (login)="onLogin($event)">
+                <p eclSiteHeaderHarmonisedLoginDescription>
+                    {{ 'ecl.site-header.LOGGED-IN-AS' | translate }} John Doe
+                </p>
+                <hr eclSiteHeaderHarmonisedLoginSeparator />
+                <a eclLink variant="standalone" href="#" (click)="onLogout($event)">
+                    {{ 'ecl.site-header.LOGOUT' | translate }}
+                </a>
+            </ecl-site-header-harmonised-login>
 
-    <!--<div style="display: flex" [@fadeAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">-->
-    <div style="display:flex">
-        <app-sidebar></app-sidebar>
-        <div style="flex:2;">
-            <router-outlet #outlet="outlet"></router-outlet>
-        </div>
+            <ecl-site-header-harmonised-language (languageClick)="onLanguageClick($event)"></ecl-site-header-harmonised-language>
+            <ecl-site-header-harmonised-search (search)="onSearch($event)"></ecl-site-header-harmonised-search>
+        </ecl-site-header-harmonised-action>
+
+        <!-- Header Navigations -->
+        <ecl-menu group="1">
+            <ecl-menu-item class="navigation-border" label="Dashboard" routerLink="dashboard"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item class="navigation-border" label="Products" routerLink="product"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item class="navigation-border" label="Manufacturers" routerLink="manufacturer"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item class="navigation-border" label="Warehouses" routerLink="warehouse"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item class="navigation-border" label="Suppliers" routerLink="supplier"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item class="navigation-border" label="Distributors" routerLink="distributor"
+                           routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+            <ecl-menu-item label="Reports" routerLink="report" routerLinkActive="ecl-menu__item--current"></ecl-menu-item>
+        </ecl-menu>
+    </ecl-site-header-harmonised>
+
+    <div class="ecl-u-pv-xl">
+        <router-outlet></router-outlet>
     </div>
     <app-footer></app-footer>
-</ecl-app-core>
+</ecl-app-harmonised>

@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Navigation Active
+.ecl-menu:not(.ecl-menu--forced-mobile) .ecl-menu__item--current .ecl-menu__link, .ecl-menu:not(.ecl-menu--forced-mobile) .ecl-menu__link:active {
+    background-color: #BFD0E4;
+    color: #003067;
+}
+
+.navigation-border {
+    border-right: 1px solid #7fa2c9;
+}
+
