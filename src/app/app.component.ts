@@ -5,8 +5,8 @@ import {
     EclSiteHeaderLanguageClickEvent,
     EclSiteHeaderLoginEvent,
     EclSiteHeaderSearchEvent
-} from "@eui/ecl-core";
-import {Link} from "./models/link";
+} from '@eui/ecl-core';
+import {Link} from './models/link';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +16,7 @@ import {Link} from "./models/link";
 export class AppComponent {
 
     links: Link[];
-
+    isLoggedIn: boolean;
 
     constructor() {
         this.links = [
@@ -27,10 +27,8 @@ export class AppComponent {
             new Link('suppliers'),
             new Link('distributors'),
             new Link('reports'),
-        ]
-    }
-
-    isLoggedIn = false;
+        ];
+    };
 
     onLogin(evt: EclSiteHeaderLoginEvent) {
         this.isLoggedIn = true;

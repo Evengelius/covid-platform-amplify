@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {DashboardComponent} from '../components/core/dashboard/dashboard.component';
 import {ProductComponent} from '../components/core/product/product.component';
-import {WarehouseComponent} from "../components/core/warehouse/warehouse.component";
-import {ManufacturerComponent} from "../components/core/manufacturer/manufacturer.component";
-import {SupplierComponent} from "../components/core/supplier/supplier.component";
-import {DistributorComponent} from "../components/core/distributor/distributor.component";
-import {ReportComponent} from "../components/core/report/report.component";
+import {WarehouseComponent} from '../components/core/warehouse/warehouse.component';
+import {ManufacturerComponent} from '../components/core/manufacturer/manufacturer.component';
+import {SupplierComponent} from '../components/core/supplier/supplier.component';
+import {DistributorComponent} from '../components/core/distributor/distributor.component';
+import {ReportComponent} from '../components/core/report/report.component';
 
 const routes: Routes = [
     {
